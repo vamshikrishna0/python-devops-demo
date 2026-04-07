@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/vamshikrishna0/python-devops-demo.git'
+                git branch: 'main', url: 'https://github.com/vamshikrishna0/python-devops-demo.git'
             }
         }
 
